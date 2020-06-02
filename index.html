@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bryan Roof's Portfolio</title>
+	<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/fixed.css">
+
+  <script type="text/javascript" src="prism.js"></script>
+  <script type="text/javascript" src="prism.ruby.js"></script>
+</head>
+
+<body data-spy="scroll" data-target="#navbarResponsive">
+
+<!-- Start Home Section -->
+<div id="about">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+	<a class="navbar-brand" href="#about">Bryan Roof</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="#about">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#code-samples">Code Samples</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#web-apps">Web Applications</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#skills">Skills & Tools</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#contact">Contact</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<!-- End Navigation -->
+
+<!-- Start Landing Page Section -->
+<div class="landing">
+	<div class="home-wrap">
+		<div class="home-inner">
+		</div>
+	</div>
+</div>
+
+<div class="caption text-center">
+	<h1>Software Developer</h1>
+	<h3>Creating and designing aplications that enhance daily life</h3>
+	<a class="btn btn-outline-light btn-lg" href="#web-apps">Explore</a>
+</div>
+<!-- End Landing Page Section -->
+	
+</div>
+
+<!-- End Home Section -->
+
+<!-- Start About Section -->
+<div id="about" class="offset">
+	
+<div class="col-12 narrow text-center">
+	<h1>Bryan Roof</h1>
+	<p class="lead">Bryan Roof is a results-driven software developer with both front and back end web development expertise, striving to use an array of coding skills to provide solid digital assets. Has developed four web apps and two mobile apps.</p>
+</div>
+</div>
+
+<!-- Start Code Samples Section -->
+<div id="code-samples" class="offset">
+
+<!-- Start of Jumbotron -->
+<div class="jumbotron">
+<div class="narrow">
+	<div class="col-12 text-center">
+		<h3 class="heading=">Coding-Examples</h3>
+		<div class="heading-underline">
+		</div>
+	</div>
+<div class="container-fluid">
+<div class="row text-center">
+	<div class="col-md-6">
+		<div class="feature">
+			<h3>Temperature Conversion</h3>
+			<p>This Ruby program will prompt the user for a temperature in degrees Celsius and let the user know what the corresponding temperature is in Fahrenheit.</p>
+		</div>
+	</div>
+
+<div class="col-md-6">
+	<div class="feature">
+		<p>    
+			puts &quot;Enter degrees in Celcius&quot; 
+			Celcius = gets
+
+			val1 = Celcius
+			val2 = (val1.to_f*1.8)+32
+
+			answer = &quot;The temperature is #{val2.round(1)} degrees Fahrenheit&quot;
+			puts answer 
+
+			puts &quot;Enjoy the weather&quot;
+		</p>
+	</div>
+</div>
+
+<br />
+<br />
+<br class="clear" />
+
+<div class="col-md-6">
+	<div class="feature">
+		<p>
+			texts = &quot;Enter a number&quot;
+			puts texts
+			val1 = gets
+			val2 = val1.to_i
+
+			ld = &quot;{val2 % 10}
+			val3 = val2.to_s
+
+			if ld == &quot;1&quot; &amp;&amp; val3 == &quot;11&quot;
+			puts val3 + &quot;th&quot;
+
+			elsif ld == &quot;2&quot; &amp;&amp; val3 == &quot;12&quot;
+			puts val3 + &quot;th&quot;
+
+			elsif ld == &quot;3&quot; &amp;&amp; val3 == &quot;13&quot;
+			puts val3 + &quot;th&quot;
+
+			elsif ld == &quot;1&quot;
+			puts val3 + &quot;st&quot;
+
+			elsif ld == &quot;2&quot;
+			puts val3 + &quot;nd&quot;
+
+			elsif ld == &quot;3&quot;
+			puts val3 + &quot;rd&quot;
+
+			else puts val3 + &quot;th&quot;
+			end
+		</p>
+	</div>
+</div>
+
+<div class="col-md-6">
+	<div class="feature">
+		<h3>Ordinal Challenge</h3>
+		<p>This ruby program will convert a plain number to the ordinal of the number. So for example, if the user enters 	 2, it will display 2nd, if the user enters 3, it will display 3rd, etc.</p>
+	</div>
+</div>
+
+<br />
+<br />
+<br class="clear" />
+
+<div class="col-md-6">
+	<div class="feature">
+		<h3>Foobar</h3>
+		<p>This ruby program is an adaptation of a classic technical interview problem which displays sequences of the Foobar pattern.</p>
+	</div>
+</div>
+
+<div class="col-md-6">
+	<div class="feature">
+		<p>
+			puts &quot;How many items do you want to see?&quot;
+			num = gets.to_i
+			num.times do |a|
+			  a += 1 
+			    b = a % 3
+			    c = a % 5
+			    if b == 0 and c == 0
+			    puts &quot;foobar&quot;
+			    elsif b == 0
+			      puts &quot;foo &quot;
+			    elsif c == 0
+			      puts &quot;bar &quot;
+			    else
+			     puts &quot;#{a} &quot;
+			      end
+			end
+			puts &quot;Goodbye&quot;
+		</p>
+	</div>
+</div>
+</div>
+
+		
+	</div> <!-- End of Row -->
+	
+</div> <!-- End Narrow Class --> 
+</div> <!-- End Jumbotron -->
+	
+</div>
+
+<!-- End Code Samples Section -->
+
+<!-- Start Web Applications Section -->
+<div id="web-apps" class="offset">
+
+<div class="inner">
+<div class="row dark">
+
+<h3 class="col-12 text-center">Web Application</h3>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="box">
+      <h4 class="text-center">Quote Generator</h4>
+      <img src="img/splurty.png" class="col-md-6" />
+      <p class="two">
+          A database-powered quote generator with a mobile-first design, using the Ruby on Rails framework, HTML, and CSS. Uses Git and GitHub for version control, and launched
+          on Heroku.
+      </p>
+      <br />
+      <a href="https://splurty-bryan-roof.herokuapp.com/" class="btn btn-outline-light btn-web">Web Application</a>
+      <a href="https://github.com/broof716/Bryan-Roof" class="btn btn-outline-light btn-web">Github</a>
+    </div>
+
+    <div class="box">
+      <h4 class="text-center">Yelp Clone</h4>
+      <img src="img/nomster.png" class="col-md-6" />
+      <p class="two">
+        A Yelp clone that integrates with the Google Maps API and includes features like user comments, star ratings, image uploading, and user authentication.
+      </p>
+      <br />
+      <a href="https://nomster-bryan-roof.herokuapp.com/" class="btn btn-outline-light btn-web">Web Application</a>
+      <a href="https://github.com/broof716/nomster" class="btn btn-outline-light btn-web">Github</a>
+    </div>
+    <br class="clear" />
+
+    <div class="box">
+      <h4 class="text-center">Two-Sided Market Place</h4>
+      <img src="img/flixter.png" class="col-md-6" />
+      <p class="two">
+        A two-sided, video-streaming marketplace platform that features credit card payment capabilities, user role management, complex user interfaces, and advanced database relationships.
+      </p>
+      <br />
+      <a href="https://flixter-bryan-roof.herokuapp.com/" class="btn btn-outline-light btn-web">Web Application</a>
+      <a href="https://github.com/broof716/flixter" class="btn btn-outline-light btn-web">Github</a>
+    </div>
+        <br class="clear" />
+    <div class="box">
+      <h4 class="text-center">Test Driven Development</h4>
+      <img src="img/grammable.png" class="col-md-6" />
+      <p class="two">
+        An Instagram clone that was built using industry-standard, test-driven development following numerous red/green/refactor cycles.
+      </p>
+      <br />
+      <a href="https://grammabled-bryan-roof.herokuapp.com/" class="btn btn-outline-light btn-web">Web Application</a>
+      <a href="https://github.com/broof716/grammabled" class="btn btn-outline-light btn-web">Github</a>
+    </div>
+    <br class="clear" />
+    <div class="box">
+      <h4 class="text-center">Single Page Todo Application</h4>
+      <img src="img/todoster.png" class="col-md-6" />
+      <p class="two">
+        This single-page to-do application features a
+        fluid user interface that– by using JavaScript– allows users to rapidly add dynamic content.
+      </p>
+      <br />
+      <a href="https://todo-bryan-roof.herokuapp.com/" class="btn btn-outline-light btn-web">Web Application</a>
+      <a href="https://github.com/broof716/todo" class="btn btn-outline-light btn-web">Github</a>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+</div>
+</div>
+
+<!-- End Web Applications Section -->
+
+<!-- Start Skills & Tools Section -->
+<div id="skills" class="offset">
+	<div class="col-12 text-center ">
+<h3>Skills &amp; Tools</h3>
+    <p class="skills-and-tools text-center">
+      Bryan has established and advanced his efficiency and expertise in the following programming languages and is proficient in the following tools.
+    </p>
+    <div class="icons">
+      <img src="img/github.png" class="icon" />
+      <img src="img/rubocop.png" class="icon" />
+      <img src="img/trello.png" class="icon" /> 
+      <img src="img/slack.png" class="iconn" />
+      <img src="img/codeship.png" class="icon" />
+
+      <br class="clear" />
+      <img src="img/skills.png" class="icon" />
+    </div>
+</div>
+</div>
+
+<!-- End Skills & Tools Section -->
+
+<!-- Start Contact Section -->
+<div id="contact" class="offset">
+<footer>
+<div class="contact-me">
+      <h3 class="contact-headline text-center">Contact</h3> 
+      <p class="contact-info">
+
+	<div class="col-12 text-center">
+		<p>Currently entertaining new opportunities. Please get in touch via email:</p>
+		<strong>Contact Info</strong>
+		<p>(520) 471-6188<br> <a href="mailto:broof716@gmail.com"> broof716@gmail.com</p></a>
+		<a href="https://github.com/broof716" target="_blank"><i class="fab fa-github-square"></i></a>
+		<a href="https://www.linkedin.com/in/bryan-roof/" target="_blank"><i class="fab fa-linkedin"></i></a>		
+	</div>
+
+	<hr class="socket, text-center">
+	&copy; Bryan Roof 2020
+</div>
+</footer>
+	
+</div>
+
+<!-- End Contact Section -->
+
+
+<!--- Script Source Files -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+<!--- End of Script Source Files -->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
